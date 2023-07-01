@@ -13,6 +13,16 @@ Target variable: The target variable for the model is the "IS_SUCCESSFUL" column
 Feature variable: All columns in the dataset except for the target variable are considered as features for the model.
 Variables to be removed: The "EIN" and "NAME" columns, which serve as non-beneficial ID columns, are removed from the input data as they do not contribute to the model's predictive power.
 
+## Compiling, Training, and Evaluating the Model
+
+Dense layer (dense_3): This layer has 7 neurons and accepts input data. It has a total of 665 parameters.
+
+Dense layer (dense_4): This layer has 14 neurons and is connected to the previous layer. It has 112 parameters.
+
+Dense layer (dense_5): This is the output layer of the model with 1 neuron, representing the final prediction. It has 15 parameters
+
+The total number of parameters in the model is 792, and all of them are trainable
+
 ## Results
 
 The model was evaluated using the test data, and the results are as follows:
